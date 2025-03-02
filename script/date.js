@@ -9,3 +9,4 @@ const formattedDate = currentDate.toLocaleDateString('en-US', options);
 
 
 dateElement.textContent = formattedDate;
+

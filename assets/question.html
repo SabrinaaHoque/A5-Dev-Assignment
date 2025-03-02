@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- tailwind -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- goggle font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Sora:wght@100..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+    
+    .poppins-regular {
+        font-family: "Poppins", sans-serif;
+
+        font-weight: 400;
+        font-style: normal;
+      }</style>
+</head>
+<body class=" poppins-regular bg-[#F4F7FF]">
+    <header class="container mx-auto">
+        <nav class="flex justify-between items-center bg-white">
+            <div class="flex items-center">
+            <img src="../assets/logo.png" alt="">
+            <h1>Dev <span>Board</span></h1>
+        </div>
+        <button id="back-btn"class="btn btn-active btn-primary">Back to access</button> 
+        </nav>
+        <main>
+            <h1 class="text-center">Blogs</h1>
+            <section class="space-y-5">
+             <div class="bg-white rounded-lg p-5">
+                <h1 class="border-b-2 border-zinc-200">Question-1: What are the different ways to select an element in the DOM?</h1>
+                <p>Answer: <br>*getElementById() <br> *getElementByClassName() <br> *getElementByTagName() <br>*querySelector() <br>*querySelector()  </p>
+             </div>
+            
+             <div  class="bg-white rounded-lg p-5">
+                <h1 class="border-b-2 border-zinc-200">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+                <p>Answer: <br>
+                    innerHTML: Returns or sets the HTML content of an element, including both markup and text.  <br>
+innerText: Returns or sets only the visible text content of an element, ignoring any HTML markup. It also considers styling. <br>
+textContent: Returns all the text content of an element, including text that is hidden or within script tags. It does not consider styling.
+                </p>
+             </div>
+             <div  class="bg-white rounded-lg p-5">
+                <h1 class="border-b-2 border-zinc-200">Question-3: What is event delegation in the DOM?</h1>
+                <p>Answer: Event delegation is a technique of attaching a single event listener to a parent element to handle events that occur on its child elements. When an event is triggered on a child element, it bubbles up the DOM tree to the parent element, where the event listener can handle it. This reduces the need to add separate event listeners to many child elements, which can improve performance.</p>
+             </div>
+             <div  class="bg-white rounded-lg p-5">
+                <h1 class="border-b-2 border-zinc-200">Question-4: What is event bubbling in the DOM?</h1>
+                <p>Answer: Event bubbling is the process of event propagation in the DOM, where an event triggered on a child element bubbles up to its parent element, then to its parent's parent, and so on, until it reaches the root element (window or document). This is a fundamental concept for implementing event delegation.</p>
+             </div>
+             <div  class="bg-white rounded-lg p-5">
+                <h1 class="border-b-2 border-zinc-200">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+                <p>Answer: <br>Creating, <br>Adding,<br> Removing</p>
+             </div>
+            </section>
+        </main>
+    </header>
+   <script src="./script/page.js"></script>
+</body>
+</html>
