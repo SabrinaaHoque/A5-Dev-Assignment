@@ -11,7 +11,7 @@ let completedCount = parseInt(completedTaskCount.textContent);
 
 completedButtons.forEach(button => {
   button.addEventListener('click', () => {
-    
+    alert("alert is shown");
     button.disabled = true;
 
     assignedCount--;
